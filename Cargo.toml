@@ -6,4 +6,5 @@ authors = ["Nico Ritschel <ritschel@gmail.com>"]
 [dependencies]
 serde = "*"
 serde_json = "*"
+serde_macros = "*"
 regex = "*"
