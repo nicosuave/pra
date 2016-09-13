@@ -90,9 +90,13 @@ module Pra
         when 'p'
           load_prev_page
         when '/'
+          output_string(2,0,'/')
+          Curses.echo
           c_str = Curses.getstr()
           clear_pull_requests
           filter_current_pull_requests(c_str)
+          output_string(2,0,'')
+          Curses.noecho
         end
         c = Curses.getch()
       end
